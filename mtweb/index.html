@@ -12,6 +12,8 @@
   <meta name="description" content="時代財金資訊股份有限公司" />
   <meta name="keywords" content="外匯總分行交易系統, 外匯, 衍生性金融商品, 銀行交易系統" />
 
+  <link href="./static/time.css"
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -22,10 +24,10 @@
 
 <body>
   <!-- NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-light style=" background-color:#e32fd>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top " tyle="background-color:#e32fd" >
 
-    <div class="container">
-      <a class="navbar-brand" href="#">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=".">
         <img src="static/images/logo.gif" alt="" width="120" height="30" class="d-inline-block align-text-top">
         時代財金資訊 ModernTimes
       </a>
@@ -36,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href=".">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">公司簡介</a>
@@ -55,9 +57,7 @@
           </li>
         </ul>
 
-        <form class="d-flex">
-          <button class="btn btn-sm btn-outline-secondary" type="button">Login</button>
-        </form>
+
       </div>
   </nav>
   <!-- End NavBar-->
@@ -76,24 +76,35 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="static/images/banner1.jpg" class="d-block w-100" alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>值得信賴的金融資訊系統</h5>
-          <p>整合前中後台資訊串流  系統更為完整</p>
-        </div>
+        <div class="carousel-caption">
+          <!--顯示內文-->
+          <!--高亮度顯示標題-->
+          <h1 class="carousel-title carousel-title-highlight">值得信賴的金融資訊系統</h1>
+          <!--一般標題-->
+          <h1 class="carousel-title">完善且延展的系統特色提供符合您需求的系統</h1>
+          <!--說明-->
+          <p class="carousel-text">提供客戶最精簡、穩定、正確、即時的資訊內容。提供在地化且能與國際脈動接軌的解決方案。</p>
+      </div>
       </div>
       <div class="carousel-item">
         <img src="static/images/banner2.jpg" class="d-block w-100" alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>值得信賴的金融資訊系統</h5>
-          <p>以積極的態度面對客戶建立綿密而完善的溝通管道</p>
-        </div>
+        <div class="container">
+          <div class="carousel-caption">
+              <h1 class="carousel-title carousel-title-highlight">值得信賴的金融資訊系統</h1>
+              <h1 class="carousel-title">為您整合前中後台資訊串流使企業系統更為完整</h1>
+              <p class="carousel-text">提供更多元化、快速的專業服務內容及強化操作系統跨平台的整合機制。</p>
+          </div>
+      </div>
       </div>
       <div class="carousel-item">
         <img src="static/images/banner3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>值得信賴的金融資訊系統</h5>
-          <p>完善且延展的系統特色提供符合您需求的系統</p>
-        </div>
+        <div class="container">
+          <div class="carousel-caption">
+              <h1 class="carousel-title carousel-title-highlight">值得信賴的金融資訊系統</h1>
+              <h1 class="carousel-title">以積極的態度面對客戶建立綿密而完善的溝通管道</h1>
+              <p class="carousel-text">所有的團隊成員以"客戶滿意導向"為其終極的努力目標。</p>
+          </div>
+      </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -154,6 +165,128 @@
         <h1 class="text-center"><strong>歷史大事記</strong></h1>
         <!--大標題-->
       </div>
+
+
+      <div class="container">
+        <div class="page-header">
+          <h1 id="timeline">Timeline</h1>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere
+                  pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                <hr>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!--歷史介紹timeline樣式 start-->
       <!--http://bootsnipp.com/snippets/featured/timeline-responsive-->
       <ul class="timeline">
