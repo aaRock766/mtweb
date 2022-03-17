@@ -1,0 +1,232 @@
+body {
+    //font-size:108%;
+    //padding-top: 50px;
+    /*使用字體*/
+    
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Helvetica Neue', Helvetica, Arial, 'Heiti TC', 微軟正黑體, sans-serif;
+    overflow-y: scroll;
+}
+.starter-template {
+    padding: 80px 15px;
+    //text-align: center;
+}
+@media (min-width: 992px) {
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 970px;
+    }
+}
+.navbar {
+    //margin-bottom: 0px;
+    /*選單背景色*/
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    /*選單勾邊*/
+    
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(221, 221, 221);
+}
+#navbar > ul > li > a {
+    font-size: 18px;
+    /*選單字體*/
+    
+    font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+#navbar > ul > li > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 0px;
+  background-color: #4997cd;
+  content: "";
+  transition: height 0.3s;
+}
+#navbar > ul > li > a:hover:after {
+  height: 5px;
+}
+.navbar-toggle .icon-bar {
+    //display: block;
+    //width: 22px;
+    height: 3px;
+    /*選單小按鈕的顏色*/
+    
+    background-color: #337ab7;
+    //border-radius: 1px;
+}
+#navigation {
+    background-color: white;
+    /*選單BAR換行-讓輪播往下一點顯示*/
+    
+    padding: 62px;
+    //padding-top: 20px;
+}
+@media (min-width: 298px) {
+    #navigation {
+        /*選單BAR-讓輪播往下一點顯示*/
+        
+        padding: 37px;
+    }
+}
+@media (min-width: 768px) {
+    #navigation {
+        /*選單換行-讓輪播往下一點顯示 原始60px*/
+        
+        padding: 35px;
+    }
+}
+@media (min-width: 992px) {
+    #navigation {
+        /*選單-讓輪播往下一點顯示*/
+        
+        padding: 35px;
+    }
+}
+/*額外使用的灰色背景*/
+
+.background-eee {
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.contact {
+    /*聯絡我們的背景*/
+    
+    background-image: url("../image/contact.jpg");
+    background-size: cover;
+}
+#footer {
+    padding-top: 5.4rem;
+    padding-bottom: 6.5rem;
+    /*版權區文字顏色*/
+    
+    background: #ffffff;
+    position: relative;
+    display: block;
+    //z-index: 100;
+    text-align: center;
+    /*版權區背景色*/
+    
+    //background-color: #00b8e0;
+    background-color: #5bc0de;
+    color: white;
+}
+.subscribe-submit, .subscribe-submit:active {
+    background-color: #f26822;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+
+.carousel-caption {
+    /*輪播的文字顯示位置，百分比越大就越高*/
+    
+    height: 90%;
+}
+.carousel {
+    height: 300px;
+    //margin-bottom: 60px;
+}
+.carousel .item {
+    height: 300px;
+    //background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 1200px;
+    height: 300px;
+}
+@media (min-width: 768px) {
+    .carousel {
+        height: 500px;
+    }
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 1999px;
+        height: 500px;
+    }
+}
+.carousel-title-highlight {
+    /*輪播標題的高亮顯示顏色*/
+    
+    color: #30C8E8
+}
+.carousel-title {
+    font-size: 33px;
+    font-weight: 900;
+    text-shadow: none;
+}
+@media (min-width: 768px) {
+    .carousel-title {
+        font-size: 48px;
+    }
+}
+@media (min-width: 992px) {
+    .carousel-title {
+        font-size: 60px;
+    }
+}
+.carousel-text {
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: none;
+}
+@media (max-width: 768px) {
+    .carousel-text {
+        display: none;
+    }
+}
+#top-link-block.affix-top {
+    position: absolute;
+    /* allows it to "slide" up into view */
+    
+    bottom: -82px;
+    /* negative of the offset - height of link element */
+    
+    right: 10px;
+    /* padding from the left side of the window */
+}
+#top-link-block.affix {
+    position: fixed;
+    /* keeps it on the bottom once in view */
+    
+    bottom: 18px;
+    /* height of link element */
+    
+    right: 10px;
+    /* padding from the left side of the window */
+}
+.features {
+    padding: 15px;
+    /*產品介紹的文字背景色*/
+    
+    background-color: #ffffff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.ok-icon {
+    /*產品介紹勾勾的顏色*/
+    
+    color: #E85D71
+}
+.timeline-panel-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #666;
+}
